@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Unreleased
+
+- [Bug Fix]: reject BPF programs whose instruction count overflows the kernel's
+  uint16 length field instead of attaching a truncated prefix.
+
 ## v0.8.0
 
 - [New API]: add `Conn.ReadFunc` and `Conn.WriteFunc` to execute an arbitrary
